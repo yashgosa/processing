@@ -23,7 +23,6 @@ void mousePressed(){
 }
 
 void draw(){
-  lights();
   background(51);
   stroke(255);
   noFill();
@@ -31,9 +30,6 @@ void draw(){
   
   translate(width/2, height/2);
   rotateX(theta);
-  rotateY(theta * 0.2);
-  rotateZ(theta * 0.7);
-
   for (Box b: sponge){
  
     b.show();
